@@ -9,7 +9,7 @@ function Document() {
 
     return (
         <div className="Body">
-            <h1>Welcome Document</h1>
+            <h1>Document</h1>
         </div>
     );
 }

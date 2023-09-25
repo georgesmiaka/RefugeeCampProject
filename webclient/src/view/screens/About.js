@@ -9,7 +9,7 @@ function About() {
 
     return (
         <div className="Body">
-            <h1>Welcome About</h1>
+            <h1>About</h1>
         </div>
     );
 }

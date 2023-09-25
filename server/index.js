@@ -43,12 +43,20 @@ app.get("/shelters", (req, res) => {
     fs.createReadStream(__dirname + '/data/'+req.query.camp+'/camp_shelters.geojson').pipe(res);
 });
 
+app.get("/properties", async (req, res) => {
+    fs.readFile(__dirname + '/data/'+req.query.camp+'/camp_boundaries.geojson', 'utf-8', (err, jsonString) => {
+        if(err) {
+            console.log("File read failed:", err);
+        }
+        try {
+            const result = JSON.parse(jsonString);
+            res.send(result['features'][0]['properties']);
+        } catch (error) {
+            console.log("Error parsing JSON string:", err);
+        }
+    })
+});
+
 app.listen(port);
 console.log('The server is now listening on: ' + port);
 
-function fetchJSON(url) {
-    return fetch(url)
-      .then(function(response) {
-        return response.json();
-      });
-  }
