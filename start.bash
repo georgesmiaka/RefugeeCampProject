@@ -4,13 +4,14 @@
 # Initializing
 #
 
-cd server/service/
-python3 service.py
-cd ..
+#cd server/service/
+#python3 service.py
+#cd ..
 
 #
 # Starting server, client and web client service
 #
+cd server
 npm i
 npm start &
 cd ..
