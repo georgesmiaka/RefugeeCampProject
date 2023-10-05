@@ -17,3 +17,21 @@
     font-size: xx-small;
     color: gray;
 }
+
+.space {
+    height: 20px;
+}
+
+.paper {
+    display: inline-block;
+    vertical-align:top;
+}
+
+.img_paper {
+    width: 450px;
+    border: 1px solid black;
+}
+
+.paper2 {
+    margin-left: 20px;
+}

@@ -9,14 +9,32 @@ function Document() {
 
     return (
         <div className="Body">
-            <h1>Socio-economic indicators</h1>
-            <h4>Some socio-economic indicators used to measure social and economic development in the Chad report</h4>
-            <p><b>- Poverty rate:</b> The ratio of the number of people in a given group whose income falls bellow the poverty line.</p>
-            <p><b>- Household income:</b> The measurement of the total amount of capital earned by every member of a single Household.</p>
-            <p><b>- Asset ownership:</b> The ratio of the number of asset owned (Radio, Motrocycle, Bicycle, Mobile)</p>
-            <p><b>- Access to School:</b> School enrollment rate</p>
-            <p><b>- Access to Health Care Services:</b> Percent of households that are access to healtcare services.</p>
-            <p><b>- Water index</b>: The ratio of the number of households that have access to clean water.</p>
+            <h1>Multidimensional Poverty Index (MPI)</h1>
+            <p><b>- 3 dimensions:</b> Health, Education and Standard of living.</p>
+            <p><b>- 10 indicators:</b> (1) Nutrition; (2) Child Mortality; (3) Years of Schooling; (4) School Attendance; (5) Cooking Fuel; (6) Sanitation; (7) Drinking Water; (8) Electricity; (9) Flooring; and (10) Asset Ownership.</p>
+            <p className="space"></p>
+            <h4>Developing an Automatic System for monitoring Multidimensional Poverty Index in Refugee Camps using Earth Observation and Machine Learning.</h4>
+            <p className="space"></p>
+            <div className="research_paper">
+                <div className="paper paper1">
+                    <img src="assets/study_africa.png" alt="paper1" className="img_paper"/>
+                    <p className="space"></p>
+                    <p>Estimating Neighborhood-Level Poverty in Africa...<a href="https://github.com/AIandGlobalDevelopmentLab/temporal-eo-wealth"> Link</a></p>
+                </div>
+                <div className="paper paper2">
+                    <img src="assets/study_brazil.png" alt="paper1" className="img_paper"/>
+                    <p className="space"></p>
+                    <p>Predicting socioeconomic indicators using...<a href="https://link.springer.com/article/10.1007/s10708-022-10618-3"> Link</a></p>
+                </div>
+            </div>
+            <p className="space"></p>
+            <div className="research_paper">
+                <div className="paper paper1">
+                    <img src="assets/study_columbia.png" alt="paper1" className="img_paper"/>
+                    <p className="space"></p>
+                    <p>Predicting MPI with ML using E.O...<a href="https://www.mdpi.com/2076-0760/12/5/296"> Link</a></p>
+                </div>
+            </div>
         </div>
     );
 }
