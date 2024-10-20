@@ -34,7 +34,3 @@ With this approach, we aim to improve data collection accuracy, reduce survey co
 ### Contributions
 Feel free to contribute by submitting issues, ideas, or code improvements to help the project achieve its mission.
 
-### License
-This project is licensed under [choose your license].
-
----
